@@ -1,0 +1,7 @@
+server:
+  port: 8080
+vito:
+  rpc:
+    zkConn: 127.0.0.1:2181
+    provider:
+      host: 172.20.10.3

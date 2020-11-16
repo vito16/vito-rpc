@@ -1,0 +1,49 @@
+{
+  "groups": [
+    {
+      "name": "vito.rpc",
+      "type": "com.vito16.rpc.common.RpcProperties",
+      "sourceType": "com.vito16.rpc.common.RpcProperties"
+    },
+    {
+      "name": "vito.rpc.consumer",
+      "type": "com.vito16.rpc.common.RpcProperties$Consumer",
+      "sourceType": "com.vito16.rpc.common.RpcProperties",
+      "sourceMethod": "getConsumer()"
+    },
+    {
+      "name": "vito.rpc.provider",
+      "type": "com.vito16.rpc.common.RpcProperties$Provider",
+      "sourceType": "com.vito16.rpc.common.RpcProperties",
+      "sourceMethod": "getProvider()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "vito.rpc.consumer.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Consumer"
+    },
+    {
+      "name": "vito.rpc.consumer.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Consumer"
+    },
+    {
+      "name": "vito.rpc.provider.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Provider"
+    },
+    {
+      "name": "vito.rpc.provider.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Provider"
+    },
+    {
+      "name": "vito.rpc.zk-conn",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties"
+    }
+  ],
+  "hints": []
+}
