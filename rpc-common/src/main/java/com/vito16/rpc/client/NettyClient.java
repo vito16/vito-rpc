@@ -1,4 +1,4 @@
-package com.vito16.rpc.consumer;
+package com.vito16.rpc.client;
 
 import com.vito16.rpc.handler.ClientHandler;
 import com.vito16.rpc.protocol.RpcDecoder;
@@ -57,8 +57,6 @@ public class NettyClient {
                     }
                 });
         connect(bootstrap, host, port, MAX_RETRY);
-//        ChannelFuture future = bootstrap.connect(host, port).sync();
-//        channel = future.channel();
     }
 
     /**

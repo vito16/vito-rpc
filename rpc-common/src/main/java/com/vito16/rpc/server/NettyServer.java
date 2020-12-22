@@ -1,4 +1,4 @@
-package com.vito16.rpc.provider;
+package com.vito16.rpc.server;
 
 import com.vito16.rpc.annotation.VitoService;
 import com.vito16.rpc.handler.ServerHandler;
@@ -20,12 +20,10 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import static com.vito16.rpc.common.Constant.PROTOCOL_PORT;
@@ -76,7 +74,8 @@ public class NettyServer implements CommandLineRunner,ApplicationContextAware {
         try {
             registry.registry(applicationContext.getBeansWithAnnotation(VitoService.class));
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn("rpc-服务端注册发生异常.",e);
+            System.exit(0);
         }
     }
 

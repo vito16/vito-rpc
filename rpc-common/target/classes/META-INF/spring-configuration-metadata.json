@@ -30,6 +30,36 @@
       "sourceType": "com.vito16.rpc.common.RpcProperties$Consumer"
     },
     {
+      "name": "vito.rpc.consumer.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Consumer"
+    },
+    {
+      "name": "vito.rpc.consumer.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Consumer"
+    },
+    {
+      "name": "vito.rpc.consumer.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Consumer"
+    },
+    {
+      "name": "vito.rpc.provider.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Provider"
+    },
+    {
+      "name": "vito.rpc.provider.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Provider"
+    },
+    {
+      "name": "vito.rpc.provider.host",
+      "type": "java.lang.String",
+      "sourceType": "com.vito16.rpc.common.RpcProperties$Provider"
+    },
+    {
       "name": "vito.rpc.provider.host",
       "type": "java.lang.String",
       "sourceType": "com.vito16.rpc.common.RpcProperties$Provider"

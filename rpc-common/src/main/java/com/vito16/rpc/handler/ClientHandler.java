@@ -52,7 +52,7 @@ public class ClientHandler extends ChannelDuplexHandler {
     public RpcResponse getRpcResponse(String requestId) {
         RpcResponse response = null;
         try {
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(5);
             DefaultFuture future = futureMap.get(requestId);
             response = future.getRpcResponse(10);
         } catch (InterruptedException e) {
